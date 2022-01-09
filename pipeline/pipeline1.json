@@ -24,7 +24,9 @@
 						}
 					},
 					"sink": {
-						"type": "AzureSqlSink"
+						"type": "AzureSqlSink",
+						"preCopyScript": "delete from users",
+						"disableMetricsCollection": false
 					},
 					"enableStaging": false,
 					"translator": {
